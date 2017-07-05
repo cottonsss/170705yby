@@ -768,14 +768,14 @@ label.css-label_alarm {background-image:url('http://image.yeoboya.com/imgs/new_w
 /* 170704 전체리스트&시간표기 수정 */
 .tap_box_interest{overflow:auto;}
 .tab_on_st2 img, .tab_off_st2 img{display:block; position:relative; top:8px; margin:0 auto; padding-bottom:5px;}
-.tab_on_st2{display:inline-block; float:left; position:relative; width:34%; height:49px; background:#fff7ee; border-bottom:2px solid #473335; box-sizing:border-box; color:#473335; font-size:13px; letter-spacing:-1px; text-align:center; line-height:30px;}
-.tab_off_st2{display:inline-block; float:left; position:relative; width:34%; height:49px; border-bottom:1px solid #d0d0d3; box-sizing:border-box; color:#949393; font-size:13px; letter-spacing:-1px; text-align:center; line-height:30px;}
+.tab_on_st2{display:inline-block; float:left; position:relative; width:34%; height:49px; background:#fff7ee; border-bottom:2px solid #473335; box-sizing:border-box; color:#473335; font-size:13px; letter-spacing:-1px; text-align:center; line-height:31px;}
+.tab_off_st2{display:inline-block; float:left; position:relative; width:34%; height:49px; border-bottom:1px solid #d0d0d3; box-sizing:border-box; color:#949393; font-size:13px; letter-spacing:-1px; text-align:center; line-height:31px;}
 .ico_clock{background:url(http://image.yeoboya.com/imgs/new_wedding/img/ico_clock_gray.png) left 3px no-repeat; background-size:12px 12px; padding-left:15px; padding-right:3px;}
 .ico_clock_gr{background:url(http://image.yeoboya.com/imgs/new_wedding/img/ico_clock_gray.png) left 3px no-repeat; background-size:12px 12px; padding-left:15px;}
 .ico_pro_open{position:relative; top:3px;} /*프로필열람뱃지*/
 .open_info_red{color:#e3361f;}
 .open_info_bro{color:#473332;}
-.lst_info_badge{position:relative; top:2px; padding-right:2px;}
+.lst_info_badge{position:relative; top:2px; padding-right:3px;}
 
 @media(min-width:360px){
 .p_send_date {padding-left:5px;}

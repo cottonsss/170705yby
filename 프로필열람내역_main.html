@@ -74,7 +74,7 @@ var _chnl = 'cont';
 var _ctrl = 'visitlist';
 var _dest = 'index';
 </script><style>
-.mg_box_02 {position:relative; clear:both; width:98%; height:56px; margin:0 auto; margin-top:7px;}
+.mg_box_02 {position:relative; clear:both; width:96%; height:56px; margin:0 auto; margin-top:7px;}
 .btn_ch_block {position:absolute; left:36px; width:67px; height:24px; margin-top:4px; border:1px solid #adadad; border-radius:3px; background:-moz-linear-gradient(top, #fefefe 0%, #ededed 100%);
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#ededed)); background:-webkit-linear-gradient(top, #fefefe 0%,#ededed 100%); background:-o-linear-gradient(top, #fefefe 0%,#ededed 100%); background:-ms-linear-gradient(top, #fefefe 0%,#ededed 100%); background:linear-gradient(to bottom, #fefefe 0%,#ededed 100%); color:#727272; font-size:13px; text-align:center; line-height:24px;}
 .list_check_block {float:left; height:auto; margin-top:17px; margin-left:5px;} /* 수정됨 */
@@ -114,20 +114,16 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 		</a>
 	<span id="connectionStatus" style="position:absolute; top:-5px; left:-3px;">&nbsp;<b><font color="red" size="2">OO</font></b></span></header>
 	<div class="tap_box_interest">
-        <a href="#" class="tab_on_st2 font_b" style="width:32%;"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_all.png" width="26" height="22" alt="전체열람내역">전체열람내역</a>
-        <a href="/?chnl=cont&amp;ctrl=visitlist&amp;dest=index" class="tab_off_st2 font_b"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_m_off.png" width="24" height="22" alt="내프로필열람회원">내 프로필 열람회원</a>
-        <a href="/?chnl=cont&amp;ctrl=openProfileList&amp;dest=index" class="tab_off_st2 font_b"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_y_off.png" width="24" height="22" alt="내가 본 프로필">내가 본 프로필</a>
+        <a href="#" class="tab_on_st2 font_b" style="width:32%;"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_all2.png" width="17" height="14" alt="전체열람내역">전체열람내역</a>
+        <a href="/?chnl=cont&amp;ctrl=visitlist&amp;dest=index" class="tab_off_st2 font_b"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_lst_m_off.png" width="14" height="14" alt="내프로필열람회원">내 프로필 열람회원</a>
+        <a href="/?chnl=cont&amp;ctrl=openProfileList&amp;dest=index" class="tab_off_st2 font_b"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_lst_y_off.png" width="14" height="14" alt="내가 본 프로필">내가 본 프로필</a>
     </div>
 	<div id="printList">
 		<p class="font_m day_line2"><span id="dateyyyymmdd">2017년 06월 21일</span></p> <!-- 170519 추가 -->
 
 		<div class="profile_rd_member_box" id="btn_28329" attrbtnmode="block">
 			<div class="mg_box_02">
-				<!--리스트정보아이콘-->
-                <div class="list_info_ico">
-                    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_m.png" width="24" height="22" alt="내프로필열람회원">
-                </div>
-				<div style="display:inline-block; width:87%; margin-top:4px; float:right" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '28329', 'm', 'n');">
+				<div onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '28329', 'm', 'n');">
 				<div class="profile_rd_pbox float_le">
 					<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVlHQmVJaXhkNGhWY0dObGFYdUFlWUtKZXBHRG0yR2NwN0E9" class="rd_member_photo" width="418" height="423" alt="회원사진">
 					<div class="count_scrt_img">
@@ -136,9 +132,17 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 					</div>
 					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/wedding_mark_01.png" class="wedding_mark" width="28" height="16" alt="재혼">
 				</div>
-				<p class="rd_id id_man_color font_b">행복을주면같이행<span> (대구 / 54세 )</span> </p>
+				<p class="rd_id id_man_color font_b"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_lst_m.png" class="lst_info_badge" width="14" height="14" alt="나를관심등록한회원">행복을주면같이행<span> (대구 / 54세 )</span> </p>
 				<br>
-				<p class="rd_date font_m"><span class="ico_clock">08:24</span> </p>
+				<p class="rd_date font_m">
+				    <span class="ico_clock">02:44</span>
+				    <span class="p_send_date font_r open_info_red">
+				        <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
+							 <img src="img/ex2.png" width="17" height="12" class="ico_pro_open" alt="프로필열람">
+                            03:15
+                        </a>
+                    </span>
+                </p>
 				<p class="rd_date font_m" style="display:none"><span>20170621</span> </p>
 				</div>
 				<!--
@@ -155,18 +159,22 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 
 		<div class="profile_rd_member_box" id="btn_156948" attrbtnmode="block">
 			<div class="mg_box_02">
-				<!--리스트정보아이콘-->
-                <div class="list_info_ico">
-                    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_m.png" width="24" height="22" alt="내프로필열람회원">
-                </div>
-				<div style="display:inline-block; width:87%; margin-top:4px; float:right" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '156948', 'm', 'n');">
+				<div onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '156948', 'm', 'n');">
 				<div class="profile_rd_pbox float_le">
 					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man.jpg" onerror="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man.jpg" class="rd_member_photo" width="418" height="423" alt="회원사진">
 					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/wedding_mark_02.png" class="wedding_mark" width="28" height="16" alt="결혼">
 				</div>
-				<p class="rd_id id_man_color font_b">다크오블러드<span> (경기 / 35세 )</span> </p>
+				<p class="rd_id id_man_color font_b"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_lst_m.png" class="lst_info_badge" width="14" height="14" alt="나를관심등록한회원">다크오블러드<span> (경기 / 35세 )</span> </p>
 				<br>
-				<p class="rd_date font_m"><span class="ico_clock">11:26</span> </p>
+				<p class="rd_date font_m">
+				    <span class="ico_clock">02:44</span>
+				    <span class="p_send_date font_r open_info_bro">
+				        <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
+							 <img src="img/ex1.png" width="17" height="12" class="ico_pro_open" alt="프로필열람">
+                            03/15
+                        </a>
+                    </span>
+                </p>
 				<p class="rd_date font_m" style="display:none"><span>20170620</span> </p>
 				</div>
 				<!--
@@ -181,11 +189,7 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 
 		<div class="profile_rd_member_box" id="btn_105558" attrbtnmode="block">
 			<div class="mg_box_02">
-				<!--리스트정보아이콘-->
-                <div class="list_info_ico">
-                    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_y.png" width="24" height="22" alt="내프로필열람회원">
-                </div>
-				<div style="display:inline-block; width:87%; margin-top:4px; float:right" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '105558', 'm', 'n');">
+				<div onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '105558', 'm', 'n');">
 				<div class="profile_rd_pbox float_le">
 					<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUhtRGU0U0twSXBVYW1waWFudC9kNGFEZTRwYm1KVmdvYm0x" class="rd_member_photo" width="418" height="423" alt="회원사진">
 					<div class="count_scrt_img">
@@ -194,17 +198,11 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 					</div>
 					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/wedding_mark_01.png" class="wedding_mark" width="28" height="16" alt="재혼">
 				</div>
-				<p class="rd_id id_man_color font_b">앙민<span> (제주 / 37세 )</span> </p>
+				<p class="rd_id id_man_color font_b"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_lst_y.png" class="lst_info_badge" width="14" height="14" alt="나를관심등록한회원">앙민<span> (제주 / 37세 )</span> </p>
 				<br>
 				<p class="rd_date font_m">
-					    <span class="ico_clock">02:34</span>
-					    <span class="p_send_date font_r">
-				            <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
-							    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open.png" width="22" height="18" class="ico_pro_open" alt="프로필열람">
-						    </a>
-                            04/13
-                        </span>
-				    </p>
+				    <span class="ico_clock">02:44</span>
+                </p>
 				</div>
 				<!--
 				<a href="javascript:btnProcess('105558', ,'btn_105558', false );" class="btn_rd_clear float_r"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_block.jpg" width="52" height="30" alt="차단" id="btn_105558" attrBtnMode="block"></a> <a href="javascript:$.goCall({memNo:'105558', memNick:'앙민', memSex:'m', memAge:'37', distance:'제주'});" class="btn_profile_call float_r"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_profile_call.jpg" width="52" height="30" alt="연락하기"></a>
@@ -218,11 +216,7 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 
 		<div class="profile_rd_member_box" id="btn_146504" attrbtnmode="block">
 			<div class="mg_box_02">
-				<!--리스트정보아이콘-->
-                <div class="list_info_ico">
-                    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_m.png" width="24" height="22" alt="내프로필열람회원">
-                </div>
-				<div style="display:inline-block; width:87%; margin-top:4px; float:right" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '146504', 'm', 'n');">
+				<div onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '146504', 'm', 'n');">
 				<div class="profile_rd_pbox float_le">
 					<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUgyRWUzK0dwSXBVYW1waWJYbC9kNGlGZVl4WW1KVmdvYm0x" class="rd_member_photo" width="418" height="423" alt="회원사진">
 					<div class="count_scrt_img">
@@ -231,7 +225,7 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 					</div>
 					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/wedding_mark_01.png" class="wedding_mark" width="28" height="16" alt="재혼">
 				</div>
-				<p class="rd_id id_man_color font_b">서비스따일<span> (광주 / 44세 )</span> </p>
+				<p class="rd_id id_man_color font_b"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_lst_m.png" class="lst_info_badge" width="14" height="14" alt="나를관심등록한회원">서비스따일<span> (광주 / 44세 )</span> </p>
 				<br>
 				<p class="rd_date font_m"><span class="ico_clock">9:05</span> </p>
 				<p class="rd_date font_m" style="display:none"><span>20170620</span> </p>
@@ -248,11 +242,7 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 
 		<div class="profile_rd_member_box" id="btn_154926" attrbtnmode="block">
 			<div class="mg_box_02">
-				<!--리스트정보아이콘-->
-                <div class="list_info_ico">
-                    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_y.png" width="24" height="22" alt="내프로필열람회원">
-                </div>
-				<div style="display:inline-block; width:87%; margin-top:4px; float:right" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '154926', 'm', 'n');">
+				<div onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '154926', 'm', 'n');">
 				<div class="profile_rd_pbox float_le">
 					<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUg2Q2Y0R0lwSXBVYW1waWJYcUVkb1NIZG9oY21KVmdvYm0x" class="rd_member_photo" width="418" height="423" alt="회원사진">
 					<div class="count_scrt_img">
@@ -261,17 +251,17 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 					</div>
 					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/wedding_mark_02.png" class="wedding_mark" width="28" height="16" alt="결혼">
 				</div>
-				<p class="rd_id id_man_color font_b">별빛한가득<span> (전북 / 30세 )</span> </p>
+				<p class="rd_id id_man_color font_b"><img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_lst_y.png" class="lst_info_badge" width="14" height="14" alt="나를관심등록한회원">별빛한가득<span> (전북 / 30세 )</span> </p>
 				<br>
 				<p class="rd_date font_m">
-					    <span class="ico_clock">02:34</span>
-					    <span class="p_send_date font_r">
-				            <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
-							    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open.png" width="22" height="18" class="ico_pro_open" alt="프로필열람">
-						    </a>
-                            04/13
-                        </span>
-				    </p>
+				    <span class="ico_clock">02:44</span>
+				    <span class="p_send_date font_r open_info_bro">
+				        <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
+							 <img src="img/ex1.png" width="17" height="12" class="ico_pro_open" alt="프로필열람">
+                            03/15
+                        </a>
+                    </span>
+                </p>
 				</div>
 				<!--
 				<a href="javascript:btnProcess('154926', ,'btn_154926', false );" class="btn_rd_clear float_r"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_block.jpg" width="52" height="30" alt="차단" id="btn_154926" attrBtnMode="block"></a> <a href="javascript:$.goCall({memNo:'154926', memNick:'별빛한가득', memSex:'m', memAge:'30', distance:'전북'});" class="btn_profile_call float_r"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_profile_call.jpg" width="52" height="30" alt="연락하기"></a>
