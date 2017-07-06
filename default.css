@@ -760,9 +760,7 @@ label.css-label_alarm {background-image:url('http://image.yeoboya.com/imgs/new_w
 
 /* 내정보 아이패드깨짐 수정 */
 @media (min-width:768px) {
-.profile_detail_txtbox {
-    height: 88px !important;
-}
+.profile_detail_txtbox {height: 88px !important;}
 }
 
 /* 170704 전체리스트&시간표기 수정 */
@@ -780,7 +778,6 @@ label.css-label_alarm {background-image:url('http://image.yeoboya.com/imgs/new_w
 .p_send_date{padding-left:5px;}
 }
 
-
 /* 170706 리스트 날짜표기 수정 */
-.day_line2 {position:relative; height:4px; margin:9px 0; border-top:1px solid #afb7b8; border-bottom:1px solid #afb7b8; background:#fff; font-size:12px; text-align:center; line-height:18px;}
+.day_line2 {position:relative; height:3px; margin:9px 0; border-top:2px solid #535a5a; border-bottom:2px solid #535a5a; background:#fff; font-size:12px; text-align:center; line-height:18px;}
 #dateyyyymmdd{position:relative; top:-6px; padding:0 6px; box-sizing:border-box; background:#fff;}
