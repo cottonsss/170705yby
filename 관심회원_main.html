@@ -236,10 +236,13 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe
 .btn_blocklist_look {position:absolute; right:75px; clear:both; width:85px; height:25px; margin-top:10px; border:1px solid #adadad; border-radius:3px; background:-moz-linear-gradient(top, #fefefe 0%, #ededed 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#ededed)); background:-webkit-linear-gradient(top, #fefefe 0%,#ededed 100%); background:-o-linear-gradient(top, #fefefe 0%,#ededed 100%); background:-ms-linear-gradient(top, #fefefe 0%,#ededed 100%); background:linear-gradient(to bottom, #fefefe 0%,#ededed 100%); color:#727272; font-size:13px; text-align:center; line-height:24px;}
 .css-label_18 {display:inline-block; height:18px; background-repeat:no-repeat; background-position:0 0; vertical-align:middle;}
 label.css-label_18 {background-image:url("http://image.yeoboya.com/imgs/new_wedding/mobile/img2/check_msg_list.png");}
-.day_line2 {height:18px; border-bottom:1px solid #afb7b8; background:#e1e3e5; font-size:12px; text-align:center; line-height:18px;} /* 170519 추가 */
 .profile_rd_pbox .count_scrt_img{position:absolute; width:20px; height:20px; top:0px; left:40px;}
 .profile_rd_pbox .count_scrt_img .count_img{width:20px!important; height:20px!important; border:none!important; margin:0!important;}
 .profile_rd_pbox .count_scrt_img p.count_num{position:absolute; top:0; left:0; width:20px; height:20px; font-size:12px; color:#fff; line-height:19px; text-align:center;}
+
+/* 170706 리스트 날짜표기 수정 */
+.day_line2 {position:relative; height:4px; margin:6px 0; border-top:1px solid #afb7b8; border-bottom:1px solid #afb7b8; background:#fff; font-size:12px; text-align:center; line-height:18px;}
+#dateyyyymmdd{position:relative; top:-6px; padding:0 6px; box-sizing:border-box; background:#fff;}
 </style>
 	<!-- 나를 관심 등록 -->
 			<p class="font_m day_line2"><span id="dateyyyymmdd">2017년 06월 10일</span></p> <!-- 170519 추가 -->
@@ -254,9 +257,9 @@ label.css-label_18 {background-image:url("http://image.yeoboya.com/imgs/new_wedd
 					<br>
 					<p class="rd_date font_m">
 					    <span class="ico_clock">02:34</span>
-					    <span class="p_send_date font_r open_info_red">
+					    <span class="p_send_date open_info_red">
 				            <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
-							    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open_today2.png" width="12" height="12" class="ico_pro_open" alt="프로필열람">
+							    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="19" height="16" class="ico_pro_open" alt="프로필열람">
 							    11:10
 						    </a>
                         </span>
@@ -277,9 +280,9 @@ label.css-label_18 {background-image:url("http://image.yeoboya.com/imgs/new_wedd
 					<br>
 					<p class="rd_date font_m">
 					    <span class="ico_clock">02:34</span>
-					    <span class="p_send_date font_r open_info_bro">
+					    <span class="p_send_date open_info_bro">
 				            <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
-							    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="12" height="12" class="ico_pro_open" alt="프로필열람">
+							    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="19" height="16" class="ico_pro_open" alt="프로필열람">
 							    04/13
 						    </a>
                         </span>

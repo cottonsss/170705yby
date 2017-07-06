@@ -64,15 +64,9 @@
 .btn_home{display:inline-block;}
 .btn_home{position:absolute; padding:7px 20px 2px 50px; top:0; right:0;}
 </style>
-<script src="http://m.yeoboya.com/cont/msgBox/js/msgBox.js?ver=1499125795"></script>
 </head>
 <body style=";-webkit-overflow-scrolling: touch">
-<script>
-// path controls
-var _chnl = 'cont';
-var _ctrl = 'msgBox';
-var _dest = '';
-</script><style>
+<style>
 /* 관심있어요 메시지 텍스트 */
 .interest_txt {color:#be6af4;}
 .ico_interest {float:right; padding-right:25px; line-height:2px; vertical-align:middle;}
@@ -93,7 +87,6 @@ label.nc_list_label {background-image:url("http://image.yeoboya.com/imgs/new_wed
 
 .new_msg_wrap {display:block; width:100%; height:100%; overflow:hidden; background-color:#fff; overflow-y:auto;}
 .msg_list_content {width:100%; height:auto; overflow:hidden;margin-top:65px;}
-.msg_list_content p {height:19px; padding-left:8px; border-top:1px solid #fff; border-bottom:1px solid #afb7b8; background-color:#e1e3e6; line-height:19px;}
 .msg_member_list {display:block; height:60px; border-bottom:1px solid #afb7b8;}
 .msg_list_content ul {margin:0; padding:0;}
 .msg_list_content ul li {float:left; height:60px;}
@@ -105,14 +98,14 @@ label.nc_list_label {background-image:url("http://image.yeoboya.com/imgs/new_wed
 .arrange_mark {background-color:#616188; box-shadow:0px 1px 0px 0px #58587b; -webkit-box-shadow:0px 1px 0px 0px #58587b; -moz-box-shadow:0px 1px 0px 0px #58587b;}
 .wedding_mark {background-color:#fae748; box-shadow:0px 1px 0px 0px #e6d543; color:#483334 !important; -webkit-box-shadow:0px 1px 0px 0px #e6d543; -moz-box-shadow:0px 1px 0px 0px #e6d543;}
 .remarry_mark {background-color:#13c3a1; box-shadow:0px 1px 0px 0px #12b897; color:#483334; -webkit-box-shadow:0px 1px 0px 0px #12b897; -moz-box-shadow:0px 1px 0px 0px #12b897;}
-.msg_info {position:relative; width:50%; letter-spacing:-1px;}
+.msg_info {position:relative; width:47%; letter-spacing:-1px;}
 .msg_info .arg_id {position:absolute; top:1px; left:0; font-size:15px;}
 .msg_info .man_id {position:absolute; top:1px; left:0; color:#19a1d1; font-size:15px;}
 .msg_info .woman_id {position:absolute; top:1px; left:0; color:#f65a52; font-size:15px;}
 .msg_info .info_txt {position:absolute; top:21px; left:0; color:#2d3038; font-size:13px;}
 .msg_info .info_txt .rocation_mark {margin-left:5px; padding:0px 3px; border:1px solid #babcc7; border-radius:3px; color:#44485d; font-size:12px;}
 .msg_info .ment_txt {position:absolute; top:40px; left:0; width:100%; overflow:hidden; color:#5f5f5f; font-size:13px; text-overflow:ellipsis; white-space:nowrap;}
-.msg_day {position:relative; width:20%;}
+.msg_day {position:relative; width:25%;}
 .msg_day .send_date {position:absolute; top:6px; right:0; color:#777; font-size:12px;}
 .msg_nmark {display:inline-block; position:absolute; top:28px; right:0; width:19px; height:19px; border-radius:50%; background-color:#f53148; color:#fff; font-size:13px; text-align:center; line-height:19px; -webkit-border-radius:50%;}
 
@@ -128,38 +121,15 @@ label.nc_list_label {background-image:url("http://image.yeoboya.com/imgs/new_wed
 .msg_info .p_woman_id {position:absolute; width:100%; top:8px; left:0; color:#f65a52; font-size:14px; letter-spacing:-1px;}
 .msg_info .p_manage_id {position:absolute; width:100%; top:8px; left:0; color:#a60770; font-size:14px; letter-spacing:-1px;} /* 1611 _ 운영자 추가 (컬러 구분) */
 .msg_info .p_info_txt {padding-left:6px; color:#2d3038; font-size:13px; letter-spacing:-1px;}
-.msg_info .p_ment_txt {position:absolute; top:30px; left:0; width:75%; overflow:hidden; color:#5f5f5f; font-size:13px; text-overflow:ellipsis; white-space:nowrap;}
+.msg_info .p_ment_txt {position:absolute; top:30px; left:0; width:100%; overflow:hidden; color:#5f5f5f; font-size:13px; text-overflow:ellipsis; white-space:nowrap; padding-right:50px; box-sizing:border-box;}
 /*운영자*/
 .msg_info .p_ment_txt2 {position:absolute; top:30px; left:0; width:100%; overflow:hidden; color:#000; font-size:13px; text-overflow:ellipsis; white-space:nowrap; font-weight:bold;}
-.msg_day .p_send_date {position:absolute; top:3px; right:0; color:#777; font-size:12px;}
 .msg_numbadge {float:left; position:relative; width:19px; height:19px; top:2px; margin-left:1px; border-radius:50%; background-color:#f53148; color:#fff; font-size:12px; text-align:center; line-height:19px; -webkit-border-radius:50%;} /* 1611 _ right 수정 */
 .sign_ilikeyou{float:left;position:relative;width:17px;height:17px;top:3px;background:url('http://image.yeoboya.com/imgs/new_wedding/web/img2/sign_ilikeyou.png') no-repeat 0 0;background-size:cover} /* 1611 _ 추가 */
 .msg_totaling-in-bubble{float:left;position:relative;right:-2px;width:25px;height:22px;margin-left:1px;background:url('http://image.yeoboya.com/imgs/new_wedding/web/img2/msg_totaling-in-bubble.png') no-repeat 0 0;background-size:cover;font-size:11px;color:#85430d;line-height:22px;text-align:center;letter-spacing:-0.05em} /* 1611 _ 추가 */
 
 .btn_msg_04 {display:block; width:80px; height:30px; margin-top:7px; margin-right:17px; border:1px solid #adadad; border-radius:5px; background:#593f40; background:-moz-linear-gradient(top, #593f40 0%, #392829 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#593f40), color-stop(100%,#392829)); background:-webkit-linear-gradient(top, #593f40 0%,#392829 100%); background:-o-linear-gradient(top, #593f40 0%,#392829 100%); background:-ms-linear-gradient(top, #593f40 0%,#392829 100%); background:linear-gradient(to bottom, #593f40 0%,#392829 100%); color:#fff; font-size:13px; text-align:center; line-height:30px;}
 .btn_header_mg04 { float:left; margin-top:1px; margin-left:5px;}
-
-    /*
-@media (min-width:360px) {
-.msg_info .p_ment_txt{width:100%;}
-}
-    */
-
-@media (min-width:480px) {
-.check_line {width:7.5%;}
-.msg_photo_wrap {width:11.5%;}
-.msg_info {width:59%;}
-}
-@media (min-width:768px) {
-.check_line {width:5%;}
-.msg_photo_wrap {width:8%;}
-.msg_info {width:65%;}
-}
-@media (min-width:1920px) {
-.check_line {width:2%;}
-.msg_photo_wrap {width:3%;}
-.msg_info {width:74%;}
-}
 
 body {background-color:#fff}
 .headerMsg {position:fixed;left:0px;top:0px;}
@@ -171,110 +141,42 @@ body {background-color:#fff}
 .msg_photo_wrap .count_scrt_img .count_img{width:20px!important; height:20px!important; border:none!important; margin:0!important;}
 .msg_photo_wrap .count_scrt_img .count_num{position:absolute; top:0; left:0; width:20px; height:20px; font-size:12px; color:#fff; line-height:19px; text-align:center;}
 
+/* 170706 리스트수정 */
+.msg_info .p_send_date {position:absolute; top:30px; right:0; color:#777; font-size:12px;}
+.p_see_date{position:absolute; top:5px; right:0; font-size:11px;}
+.p_see_date img{position:relative; top:4px;}
 
-.msg_ar_time{position:absolute; top:30px; right:2px; font-size:13px; color:#777;}
-</style>
-
-<script type="text/javascript" src="http://m.yeoboya.com/cont/js/comm.js?ver=1499125795"></script>
-<script>
-$(document).ready(function() {
-		$("#checkAll").on("click",function(event) {
-				if($("#checkAll").prop('checked')){
-						$("#chkAct input:checkbox").prop('checked',true);
-				}else{
-						$("#chkAct input:checkbox").prop('checked',false);
-				}
-		});
-
-		$.actMsgLoad('');
-		$.msgCntLoad('');
-}); // 메시지함 선택삭제
-
-// go write
-$.goWritePop = function() {
-	var getMate = $.ajaxGetMate($.cookie('gCCV:NO'));
-	if(getMate != false) {
-				window.location.href='/?chnl=&ctrl=mate&dest=meetWrite';
-			}
-	else {
-		$.confirm('글을 등록하기 위해서는<br>내 프로필을 등록하셔야 합니다.','취소', '등록하기', null, function(){
-			window.location.href='/?chnl=cont&ctrl=profile&dest=profileEdit';
-		});
-	}
+@media (min-width:360px) {
+.msg_info{width:48%;}
+    .msg_day{width:24%;}
+    .p_see_date{font-size:12px;}
 }
 
-// go interest
-$.goInterest = function() {
-		window.location.href='/?chnl=&ctrl=interestList&dest=index';
-	}
+@media (min-width:414px) {
+.msg_info{width:50%;}
+.msg_day{width:22%;}
+}
 
-$.goMatchInterest = function(memNo) {
-		window.location.href='/?chnl=cont&ctrl=interestList&dest=interest&memNo=' + memNo;
-	}
+@media (min-width:480px) {
+.check_line {width:7.5%;}
+.msg_photo_wrap {width:11.5%;}
+}
+@media (min-width:768px) {
+.check_line {width:5%;}
+.msg_photo_wrap {width:8%;}
+.msg_info {width:70%;}
+.msg_day{width:15%;}
+}
+@media (min-width:1920px) {
+.check_line {width:2%;}
+.msg_photo_wrap {width:3%;}
+}
 
-//메시지함 신규메시지 카운트(팝업메시지창) +1 2015.10.01
-$.newMsgCntPlus = function(memNo) {
-	$.actMsgLoad('');
-	/*
-	var msgCnt = parseInt( $(".noReadCnt_"+ memNo).html() );
-	if( memNo == "212" || memNo == "16" || memNo=="1406" ) {
-		alert( msgCnt + ': ' + memNo);
-	}
-	if( msgCnt > -1 ) {
-		//msgCnt++;
-		$(".noReadCnt_"+memNo).html(msgCnt);
-	} else if( memNo && isNaN(msgCnt) ) {
-		//window.location.reload();
-	}
-	$(".msg_list_"+memNo).show();
-	*/
-};
+/* 170706 날짜구분선 수정 */
+.msg_list_content p {position:relative; height:4px; margin:9px 0; border-top:1px solid #afb7b8; border-bottom:1px solid #afb7b8; background:#fff; font-size:12px; text-align:center; line-height:18px;}
+    .msg_list_content p span{position:relative; top:-6px; padding:0 6px; box-sizing:border-box; background:#fff;}
+</style>
 
-$(window).load(function() {
-	if($isApp) { localStorage.setItem("isBack", 1); }
-});
-
-//대화함 페이지 벗어남 체크후 update 처리
-$(window).unload(function() {
-
-});
-
-/*
-$(window).on('hashchange', function(e) {
-	alert('hash change!!' + window.location.hash + '=====>openUrl' +  localStorage.openUrl + '====>');
-});
-*/
-
-$.ptrMsgUpd = function(ptrNo) {
-	var param = [
-		'actMode=msgReadUpd'
-		, 'pmemNo=' + ptrNo
-	].join('&');
-	$.ajax({
-		url: "/?chnl=cont&ctrl=msgBox/ajax&dest=ajaxNewMsgCnt",
-		dataType: 'html',
-		method: 'POST',
-		async: false,
-		data: param,
-		timeout: 10000,
-		success: function(data){
-			if( data != 1 ) {
-//				alert('error');
-			}
-		}
-	});
-} // 메시지 카운트
-
-$(window).scroll(function(event){
-		if($(window).scrollTop() > 77) {
-			$('#subBar').css({"position":"fixed","top":"0","z-index":"23"});
-		}
-		else {
-			$('#subBar').css({"position":"relative","top":"0"});
-		}
-	});
-	matchNo = $.cookie('gCCV:NO');
-</script>
 
 <div class="new_msg_wrap">
 	<header>	<header>
@@ -300,83 +202,54 @@ $(window).scroll(function(event){
 	<!-- 메시지리스트 -->
 	<div id="chkAct" class="msg_list_content">
 					<p class="font_m day_line">
-						<span id="date20170701">2017년 07월 01일</span>
+						<span id="date20170705">2017년 07월 05일</span>
 					</p>
 		<ul class="msg_member_list">
 			<li class="check_line">
-				<input class="nc_list" id="chkMem_154581" value="154581" name="checkbox_lite" type="checkbox">
-				<label class="nc_list_label" for="chkMem_154581"></label>
+				<input class="nc_list" id="chkMem_161754" value="161754" name="checkbox_lite" type="checkbox">
+				<label class="nc_list_label" for="chkMem_161754"></label>
 			</li>
 			<li class="msg_photo_wrap">
 				<div class="count_scrt_img">
 					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수">
-					<span class="count_num">2</span>
+					<span class="count_num">20</span>
 				</div>
 
-				<a href="javascript:void(0);" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '154581', 'm', 'n');">
-					<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUg2Q2U0ZURwSXBVYW1waWJYcURkNEdIZVlwWG1LQmdvYm0x">
+				<a href="javascript:void(0);" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '161754', 'm', 'n');">
+					<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUg5L2ZZU0dwSXBVYW1waWJubC9kNFdDZm90ZG1LQmdvYm0x">
 					<span class="wedding_mark font_m">결혼</span>
 				</a>
 			</li>
-			<a href="javascript:void(0);" onclick="$.checkAlwaysStopUserAndGoMsgBoxView('39679', '154581', 'b'); $.readCntRemove(this);">
+			<a href="javascript:void(0);" onclick="$.checkAlwaysStopUserAndGoMsgBoxView('39679', '161754', 'b'); $.readCntRemove(this);">
 				<li class="msg_info">
-					<span class="p_man_id font_b">님과함께할거양<span class="p_info_txt font_m">남/35세</span></span>
-					<span class="p_ment_txt font_r">반가워요 좋은인연이 될수반가워요 좋은인연이 될수반가워요 좋은인연이 될수반가워요 좋은인연이 될수반가워요 좋은인연이 될수</span>
-					<span class="msg_ar_time"><span class="ico_clock_gray">05:45</span></span>
+					<span class="p_man_id font_b">달콤한생활라이프						<span class="p_info_txt font_m">남/31세</span>
+											</span>
+					<span class="p_ment_txt font_r">안녕하세요 </span>
+					<span class="p_send_date font_r"><span class="ico_clock">03:17</span></span>
 				</li>
 				<li class="msg_day">
+                   <span class="p_see_date open_info_red">
+				            <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="19" height="16" class="ico_pro_open" alt="프로필열람">
+                            03:15
+                    </span>
                     <div class="float_r" style="margin-top:29px;">
-				        <span class="p_send_date font_r">
-				            <span onclick="$.clickProfileBadge();" style="cursor:hand">
-							    <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open.png" width="22" height="18" class="ico_pro_open" alt="프로필열람">
-						    </span>
-                            11:10
-                        </span>
-				        <span class="sign_ilikeyou"></span>
-				        <span class="msg_numbadge font_b">2</span>
-				        <span class="msg_totaling-in-bubble">4</span>
+													<span class="msg_numbadge font_b">1</span>
+												<span class="msg_totaling-in-bubble">1</span>
 					</div>
 				</li>
 			</a>
 		</ul>
-        <p class="font_m day_line">
-            <span id="date20170630">2017년 06월 30일</span>
-        </p>
-		<ul class="msg_member_list">
-			<li class="check_line">
-				<input class="nc_list" id="chkMem_153261" value="153261" name="checkbox_lite" type="checkbox">
-				<label class="nc_list_label" for="chkMem_153261"></label>
-			</li>
-			<li class="msg_photo_wrap">
-				<div class="count_scrt_img">
-					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수">
-					<span class="count_num">1</span>
-				</div>
-				<a href="javascript:void(0);" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '153261', 'm', 'n');">
-					<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUg2QmVJV0RwSXBVYW1waWJYcUFkNFNFZVlwWm1LQmdvYm0x">
-					<span class="wedding_mark font_m">결혼</span>
-				</a>
-			</li>
-			<a href="javascript:void(0);" onclick="$.checkAlwaysStopUserAndGoMsgBoxView('39679', '153261', 'b'); $.readCntRemove(this);">
-				<li class="msg_info">
-					<span class="p_man_id font_b">성요셉청년회<span class="p_info_txt font_m">남/29세</span></span>
-					<span class="p_ment_txt font_r">안녕하세요</span>
-					<span class="msg_ar_time"><span class="ico_clock_gray">05:45</span></span>
-				</li>
-				<li class="msg_day">
-                    <div class="float_r" style="margin-top:29px;">
-				        <span class="msg_numbadge font_b">1</span>
-						<span class="msg_totaling-in-bubble">1</span>
-					</div>
-				</li>
-			</a>
-		</ul>
+
+					<p class="font_m day_line">
+						<span id="date20170630">2017년 06월 30일</span>
+					</p>
 		<ul class="msg_member_list">
 			<li class="check_line">
 				<input class="nc_list" id="chkMem_160996" value="160996" name="checkbox_lite" type="checkbox">
 				<label class="nc_list_label" for="chkMem_160996"></label>
 			</li>
 			<li class="msg_photo_wrap">
+
 				<a href="javascript:void(0);" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '160996', 'm', 'n');">
 					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man.jpg">
 					<span class="wedding_mark font_m">결혼</span>
@@ -384,91 +257,27 @@ $(window).scroll(function(event){
 			</li>
 			<a href="javascript:void(0);" onclick="$.checkAlwaysStopUserAndGoMsgBoxView('39679', '160996', 'b'); $.readCntRemove(this);">
 				<li class="msg_info">
-					<span class="p_man_id font_b">꼬꼬마후니<span class="p_info_txt font_m">남/34세</span></span>
+					<span class="p_man_id font_b">꼬꼬마후니						<span class="p_info_txt font_m">남/34세</span>
+											</span>
 					<span class="p_ment_txt font_r"><span class="interest_txt">관심있어요 !</span></span>
-					<span class="msg_ar_time"><span class="ico_clock_gray">05:45</span></span>
+                    <span class="p_send_date font_r"><span class="ico_clock">03:17</span></span>
 				</li>
 				<li class="msg_day">
+                   <span class="p_see_date open_info_bro">
+				            <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="19" height="16" class="ico_pro_open" alt="프로필열람">
+                            03/15 12:14
+                    </span>
                     <div class="float_r" style="margin-top:29px;">
-                        <span class="p_send_date font_r"><span onclick="$.clickProfileBadge();" style="cursor:hand">
-							<img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open.png" width="22" height="18" class="ico_pro_open" alt="프로필열람">
-						</span>
-                        06.30
-                        </span>
                         <span class="sign_ilikeyou"></span>
+                        <span class="msg_numbadge font_b">1</span>
                         <span class="msg_totaling-in-bubble">1</span>
 					</div>
 				</li>
 			</a>
 		</ul>
-		<ul class="msg_member_list">
-			<li class="check_line">
-				<input class="nc_list" id="chkMem_153143" value="153143" name="checkbox_lite" type="checkbox">
-				<label class="nc_list_label" for="chkMem_153143"></label>
-			</li>
-			<li class="msg_photo_wrap">
-				<div class="count_scrt_img">
-					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수">
-					<span class="count_num">1</span>
-				</div>
 
-				<a href="javascript:void(0);" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '153143', 'm', 'n');">
-					<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUg2QmQ0T0ZwSXBVYW1waWJYcUFkNENEZG94VW1LQmdvYm0x">
-					<span class="wedding_mark font_m">결혼</span>
-				</a>
-			</li>
-			<a href="javascript:void(0);" onclick="$.checkAlwaysStopUserAndGoMsgBoxView('39679', '153143', 'b'); $.readCntRemove(this);">
-				<li class="msg_info">
-					<span class="p_man_id font_b">바닷사나이<span class="p_info_txt font_m">남/34세</span></span>
-					<span class="p_ment_txt font_r">안녕하세요</span>
-					<span class="msg_ar_time"><span class="ico_clock_gray">05:45</span></span>
-				</li>
-				<li class="msg_day">
-                    <div class="float_r" style="margin-top:29px;">
-				        <span class="msg_totaling-in-bubble">1</span>
-					</div>
-				</li>
-			</a>
-		</ul>
-					<p class="font_m day_line">
-						<span id="date20170624">2017년 06월 24일</span>
-					</p>
-		<ul class="msg_member_list">
-			<li class="check_line">
-				<input class="nc_list" id="chkMem_156494" value="156494" name="checkbox_lite" type="checkbox">
-				<label class="nc_list_label" for="chkMem_156494"></label>
-			</li>
-			<li class="msg_photo_wrap">
-				<div class="count_scrt_img">
-					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수">
-					<span class="count_num">4</span>
-                </div>
-				<a href="javascript:void(0);" onclick="$.checkHaveMsgItemAndGoProfile('39679', 'f', '156494', 'm', 'n');">
-					<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUg2RWVvaUdwSXBVYW1waWJYdUFlSUtGZllsYW1LQmdvYm0x">
-					<span class="wedding_mark font_m">결혼</span>
-				</a>
-			</li>
-			<a href="javascript:void(0);" onclick="$.checkAlwaysStopUserAndGoMsgBoxView('39679', '156494', 'b'); $.readCntRemove(this);">
-				<li class="msg_info">
-					<span class="p_man_id font_b">스릴군<span class="p_info_txt font_m">남/30세</span></span>
-					<span class="p_ment_txt font_r">제가 많이 늦었죠? 사용제가 많이 늦었죠? 사용</span>
-					<span class="msg_ar_time"><span class="ico_clock">05:45</span></span>
-				</li>
-				<li class="msg_day">
-                    <div class="float_r" style="margin-top:29px;">
-						<span class="p_send_date font_r">
-                            <span onclick="$.clickProfileBadge();" style="cursor:hand">
-                                <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open.png" width="22" height="18" class="ico_pro_open" alt="프로필열람">
-                            </span>
-                            10:48
-                        </span>
-                        <span class="sign_ilikeyou"></span>
-						<span class="msg_numbadge font_b">2</span>
-				        <span class="msg_totaling-in-bubble">4</span>
-					</div>
-				</li>
-			</a>
-		</ul>
+
+
 </div>
 
 	<!--
@@ -493,323 +302,6 @@ $(window).scroll(function(event){
 결혼중개신고번호 광주-서구-국내-15-0003호
 </div>
 
-
-<script>
-$(document).ready(function() {
-
-	$.hashState = 1;
-
-	// open layer use backbutton
-	$.setHash = function(hashStr) {
-		$.hashState = 2;
-		if(history.pushState) {
-			history.pushState('', document.title, '/' + location.search + hashStr);
-		}
-		if(typeof(Storage) !== "undefined") {
-			localStorage.setItem("lastHash", hashStr);
-		}
-	}
-
-	// hash action
-	$.actHash = function(hashData) {
-		$.hashState = 3;
-		switch(hashData) {
-			case '#photo_save_hash' :
-				$("#photo_save_ly").hide();
-				break;
-			case '#slctPrPhoto' :
-				$('#slctPrPhoto').hide();
-				break;
-			case '#slctProfileAttr' :
-				$.closeProfileAttr();
-				break;
-			case '#ifx-alert' :
-				$('#ifx-dialog').hide();
-				break;
-			case '#ifx-confirm' :
-				$('#ifx-dialog').hide();
-				break;
-			case '#msgReport' :
-				$('#profileReport').hide();
-				$('#msgReport').hide();
-				$('#wealthReport').hide();
-				break;
-			case '#ajaxStopID' :
-				$('#ifx-dialog').hide();
-				break;
-			case '#brokerMember' : // ----------------- 중매회원 소개
-				$("#brokerMember").remove();
-				break;
-			case '#miniProfile' : // ----------------- 미니프로필
-				$("#miniProfile").remove();
-				break;
-			case '#bgBlack' : // ----------------- 전체보기버튼 눌렀을 때 암막 2016.11.02 endy
-				$.allMenuHide();
-				break;
-			case '#bgBlackAll' : // ----------------- 2016.11.02 endymion 전체보기버튼 눌렀을 때 암막
-				$.setNewMemAlertHide();
-				break;
-			case '#noticeOpen' :
-				$.noticeClose();
-				break;
-			case '#floating' : // ----------------- 플로팅버튼 2017.04.03 endy
-				$.floatAction();
-				break;
-			case '#ilhaeyoWarning' : // ----------------- 일해요 유의사항 토글 2017.04.03 endy
-				$.noteToggle();
-				break;
-			case '#detailSrchPop' : // ----------------- 상세검색 팝업창 닫기
-				$.directCloseDetailSrchPop();
-				break;
-			case '#alarmLayer' :
-				$(".alarm_layer").slideUp(200);
-				$.hintLayerHide();
-				break;
-			case '#leaveLayer' :
-				layerHide();
-				break;
-			case '#t_mateSlct' :
-				$("#t_mateSlctLayer").attr("value","1");
-				$("#banner_secret_mini, .floating-btn_area_wrap").hide();
-				break;
-			default :
-				// 연락하기
-				if(hashData.indexOf('msg_send_ly')) {
-					var arRet = hashData.split('_');
-					$.msgCloseLayer(arRet[3]);
-				}
-
-				if(hashData.indexOf('msg_rcv_ly')) {
-					var arRet = hashData.split('_');
-					$.msgCloseLayer(arRet[3]);
-				}
-				break;
-			}
-	};
-
-	// hash chcek
-	$(window).on('hashchange', function(e) {
-		if(typeof(Storage) !== "undefined") {
-			if(window.location.hash == '') {
-				$.actHash(localStorage.lastHash);
-				localStorage.setItem("lastHash", '');
-			}
-
-			if(window.location.hash != '' && window.location.hash != localStorage.lastHash) {
-				$.actHash(localStorage.lastHash);
-				localStorage.setItem("lastHash", window.location.hash);
-			}
-		}
-	});
-
-	$(window).scroll(function() {
-		if($(window).scrollTop() > 300) {
-			$('#btnMoveTop').css({"z-index":"999","margin-bottom":"0px"}).show();
-		}
-		else {
-			$('#btnMoveTop').hide();
-		}
-	});
-
-	$(window).on("load", function() {
-		setTimeout(function() {
-
-		}, 0);
-	});
-});
-</script>
-
-<script>
-(function($) {
-	// user stop check
-	if($.cookie('gCCV:NO')) {
-		if($isApp) {
-			$(document).on('WebViewJavascriptBridgeReady', function() {
-				$.userStopChk('userStop');
-			});
-		}
-		else {
-			$.userStopChk('userStop');
-		}
-	}
-}(jQuery));
-</script>
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-65223325-2', 'auto');
-ga('send', 'pageview');
-</script>
-
-<script type="text/javascript">
-  // 한 페이지에서 두개의 서로다른 신고하기 창 처리
-  var $arProfileList = [ "기타", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     // [허위프로필신고] 의 신고사유 목록
-  var $arMsgList = [ "기타", "욕설/비방", "광고/상업성", "음란성", "SNS 아이디 요구 ( 카톡 )" ];   // 연락하기/메시지에서의 신고사유 목록
-  var $arWealthList1 = [ "기타", "연봉사진 신고", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     //프로필 연봉사진 신고 목록
-  var $arWealthList2 = [ "기타", "학력사진 신고", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     //프로필 학력사진 신고 목록
-  var $arWealthList3 = [ "기타", "차량사진 신고", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     //프로필 차량사진 신고 목록
-
-  var result = "";
-  var checkVal = "";
-  var pmemNo = '';   // 상대방 회원No
-
-  // 신고사유 라디오버튼을 클릭했을 때 선택한 번호([0:기타,1:개인정보허위,2:광고및음란성 사진/글])가 신고하기 버튼의 onclick 속성값을 업데이트 하도록
-  $.radioClick = function(){
-    checkVal = $(":radio[name='radiog_lite']:checked").val();
-  }
-  // 신고사유 선택된게 없으면 선택하도록 경고창 띄우기 : 메시지박스용(채팅창포함)
-  $.sendMsg = function(msgImg, msgText){
-    if($(":radio[name='radiog_lite']:checked").length > 0) {
-      var checkVal = $(":radio[name='radiog_lite']:checked").val();
-      $.msgReportProc(pmemNo, checkVal, msgImg, msgText);
-	  $('#msgReport').hide();
-      //alert("pmemNo : "+pmemNo+"  / checkVal : "+checkVal+"  / msgImg : "+msgImg+"  / msgText : "+msgText);
-    }
-    else {
-      $.alert('신고사유를 선택하여주세요', '확인', null);
-    }
-  }
-  // 신고사유 선택된게 없으면 선택하도록 경고창 띄우기 : 허위프로필신고용(프로필사진포함)
-  $.sendProfile = function(rptSlct, regNo){
-    if($(":radio[name='radiog_lite']:checked").length > 0) {
-      var rptType = $(":radio[name='radiog_lite']:checked").val();
-      $.reportProc(pmemNo, rptSlct, rptType, regNo);
-	  $('#wealthReport').hide();
-	  $('#profileReport').hide();
-    }
-    else {
-      $.alert('신고사유를 선택하여주세요', '확인', null);
-    }
-  }
-
-  $.cancelMsg = function(){
-	$('.report_wrap').hide();
-  };
-
-  // ====== 앞에서 신고하기를 클릭했을 때의 처리 ====== //
-  // 메시지박스(btnReport, 입력한내용, 이미지파일명, 이미지주소)
-  // 프로필사진(btnReport2, 'p', 신고사유(공백), 신고값(이미지번호))
-  // 허위프로필(btnReport2, 'm', 신고사유(공백), 신고값(0))
-  $.btnClick = function (clickId, msgText, msgImg, photoUrl){
-
-    var rptSlct = msgText;    // 허위프로필 또는 프로필사진일때 : msgText 값을 rptSlct 로 받아서 사용(변수명을 명확히)
-    var regNo = photoUrl;   // 허위프로필 또는 프로필사진일때
-		if(!location.hash){
-			$.setHash('#msgReport');
-		}
-    var selKey = "";           // 신고사유 갯수가 서로 다르기 때문에 클릭한 id값에 따른 배열을 저장한다.
-    var clickReport = "";     // 허위플로필신고(btnReport) or 글쓰기의 신고(btnReport2)
-    var radioList = "";        // 신고사유 리스트를 저장할 변수(라디오버튼-목록)
-    var num =1;               // input 요소의 radio 버튼에 id 값을 줄 때 1 번부터 시작하도록(radio_msg01)
-
-    // 클릭한 버튼이 허위프로필신고(btnReport) or  글쓰기의 신고(btnReport2) 일 때 보여줄 창을 clickReport 에 담는다.
-    switch(clickId){
-    		case "btnReport":
-			      selKey = $arProfileList;
-			      clickReport = $('#profileReport').css('display');
-    		break;
-    		case "btnReport2":
-			      selKey = $arMsgList;
-			      clickReport = $('#msgReport').css('display');
-			      num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
-    		break;
-    		case "btnReport3_1":  //프로필 연봉사진 신고
-			      selKey = $arWealthList1;
-			      clickReport = $('#msgReport').css('display');
-			      num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
-    		break;
-    		case "btnReport3_2":  //프로필 학력사진 신고
-			      selKey = $arWealthList2;
-			      clickReport = $('#msgReport').css('display');
-			      num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
-    		break;
-    		case "btnReport3_3":  //프로필 차량사진 신고
-			      selKey = $arWealthList3;
-			      clickReport = $('#msgReport').css('display');
-			      num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
-    		break;
-    		default:
-    				selKey = "";
-    		break;
-    }
-
-    // 위의 신고사유 배열 갯수만큼 ul 요소안에 li 요소로 사유리스트를 만든다.
-    // 실제 신고사유 리스트가 html 코드로 저장(단 기타의 경우 실제 index 값은 "0"이지만 실제 화면에 보이는 위치는 맨 끝으로 가야함)
-    for(var i=0; i<selKey.length; i++) {
-      if(selKey[i] != '기타') {
-        radioList += "<li class='font_m'>";
-        radioList += "<label for='radio_msg0"+(i+num)+"' class='radio_label'>"+selKey[i];
-        radioList += "<input href='javascript:void(0);' onclick='$.radioClick()' name='radiog_lite' type='radio' class='msg_radio_1' id='radio_msg0"+(i+num)+"' value="+i+" />";
-        radioList += "<label for='radio_msg0"+(i+num)+"' class='radio_css01'></label></label>";
-        radioList += "</li>";
-      }
-    }
-    for(var i=0; i<selKey.length; i++) {
-      if(selKey[i] == '기타') {
-        radioList += "<li class='font_m'>";
-        radioList += "<label for='radio_msg0"+(i+num)+"' class='radio_label'>"+selKey[i];
-        radioList += "<input href='javascript:void(0);' onclick='$.radioClick()' name='radiog_lite' type='radio' class='msg_radio_1' id='radio_msg0"+(i+num)+"' value="+i+" />";
-        radioList += "<label for='radio_msg0"+(i+num)+"' class='radio_css01'></label></label>";
-        radioList += "</li>";
-      }
-    }
-    // 신고사유선택창 : 허위프로필용
-    var wrapHeight = 0;
-    var winHeight = parseInt($(window).height());
-
-    if(clickReport == 'none'){
-    		switch(clickId){
-    				case "btnReport":
-					      $('#profileReport').show();
-					      $('#msgReport').hide();
-					      $('#wealthReport').hide();
-					      $('#profileReportUl > span').html(radioList);
-					      wrapHeight = parseInt($('#profileReport').css('height').replace(/[^0-9]/g,''))+50;
-					      result = "$.sendProfile('"+rptSlct+"','"+regNo+"')";
-    				break;
-    				case "btnReport2":
-					      if((msgImg == "||" || msgImg == "|" || msgImg == "null||") && msgText != null){
-					       		radioList += "<li class='font_m last_li'>"+msgText+"<br><br><br></li>";
-					      }else{
-					        	radioList += "<li class='font_m last_li' ><div id='imgReport'></div></li>";
-					      }
-					      $('#msgReport').show();
-					      $('#profileReport').hide();
-					      $('#wealthReport').hide();
-					      $('#msgReportUl > span').html(radioList);
-					      wrapHeight = parseInt($('#msgReport').css('height').replace(/[^0-9]/g,''));
-					      result = "$.sendMsg('"+msgImg+"','"+msgText+"')";
-    				break;
-    				case "btnReport3_1":
-    				case "btnReport3_2":
-    				case "btnReport3_3":
-					      $('#wealthReport').show();
-					      $('#msgReport').hide();
-					      $('#profileReport').hide();
-					      $('#wealthReportUI > span').html(radioList);
-					      wrapHeight = parseInt($('#profileReport').css('height').replace(/[^0-9]/g,''))+90;
-					      result = "$.sendProfile('"+rptSlct+"','"+regNo+"')";
-    				break;
-    				default:
-					      $('#profileReport').hide();
-					      $('#msgReport').hide();
-    				break;
-    		}
-    }else{
-	      $('#profileReport').hide();
-	      $('#msgReport').hide();
-    }
-
-    $('.sendReport').attr('onclick', result);
-//    $('#radio_msg0'+num).attr('checked', true);
-    $('#imgReport').css("background-image","url('"+photoUrl+"')");
-    $('.report_wrap').css("top", ((winHeight-wrapHeight)/2)+"px");
-  }
-</script>
 
 
 </body></html>

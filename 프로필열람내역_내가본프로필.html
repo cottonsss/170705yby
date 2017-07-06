@@ -98,11 +98,14 @@ background: linear-gradient(to bottom,  #00b7ea 0%,#009ec3 100%); text-align:cen
 .alarm_arrow {top:47px; left:26px; }  /* 수정됨 */
 }
 .float_le {float:left;} /* 추가됨 */
-.day_line2 {height:18px; border-bottom:1px solid #afb7b8; background:#e1e3e5; font-size:12px; text-align:center; line-height:18px;} /* 170519 추가 */
 body {cursor: initial; background-color:#fff;} /* 170519 추가 */
 .profile_rd_pbox .count_scrt_img{position:absolute; width:20px; height:20px; top:0px; left:40px;}
 .profile_rd_pbox .count_scrt_img .count_img{width:20px!important; height:20px!important; border:none!important; margin:0!important;}
 .profile_rd_pbox .count_scrt_img p.count_num{position:absolute; top:0; left:0; width:20px; height:20px; font-size:12px; color:#fff; line-height:19px; text-align:center;}
+
+/* 170706 리스트 날짜표기 수정 */
+.day_line2 {position:relative; height:4px; margin:6px 0; border-top:1px solid #afb7b8; border-bottom:1px solid #afb7b8; background:#fff; font-size:12px; text-align:center; line-height:18px;}
+#dateyyyymmdd{position:relative; top:-6px; padding:0 6px; box-sizing:border-box; background:#fff;}
 
 </style>
 
@@ -157,9 +160,9 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
                 <br>
                 <p class="rd_date font_m">
 				    <span class="ico_clock">02:44</span>
-				    <span class="p_send_date font_r open_info_red">
+				    <span class="p_send_date open_info_red">
 				        <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
-							 <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open_today2.png" width="12" height="12" class="ico_pro_open" alt="프로필열람">
+							 <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="19" height="16" class="ico_pro_open" alt="프로필열람">
                             03:15
                         </a>
                     </span>
@@ -193,9 +196,9 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
                 <br>
                 <p class="rd_date font_m">
 				    <span class="ico_clock">02:44</span>
-				    <span class="p_send_date font_r open_info_bro">
+				    <span class="p_send_date open_info_bro">
 				        <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
-							 <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="12" height="12" class="ico_pro_open" alt="프로필열람">
+							 <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="19" height="16" class="ico_pro_open" alt="프로필열람">
                             03/15
                         </a>
                     </span>
@@ -234,9 +237,9 @@ body {cursor: initial; background-color:#fff;} /* 170519 추가 */
                 <br>
                 <p class="rd_date font_m">
 				    <span class="ico_clock">02:44</span>
-				    <span class="p_send_date font_r open_info_bro">
+				    <span class="p_send_date open_info_bro">
 				        <a href="javascript:void(0);" onclick="$.clickProfileBadge();">
-							 <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="12" height="12" class="ico_pro_open" alt="프로필열람">
+							 <img src="http://image.yeoboya.com/imgs/new_wedding/img/ico_pro_open2.png" width="19" height="16" class="ico_pro_open" alt="프로필열람">
                             03/15
                         </a>
                     </span>
