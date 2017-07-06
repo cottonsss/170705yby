@@ -770,7 +770,7 @@ label.css-label_alarm {background-image:url('http://image.yeoboya.com/imgs/new_w
 .tab_on_st2 img, .tab_off_st2 img{display:block; position:relative; top:8px; margin:0 auto; padding-bottom:5px;}
 .tab_on_st2{display:inline-block; float:left; position:relative; width:34%; height:49px; background:#fff7ee; border-bottom:2px solid #473335; box-sizing:border-box; color:#473335; font-size:13px; letter-spacing:-1px; text-align:center; line-height:31px;}
 .tab_off_st2{display:inline-block; float:left; position:relative; width:34%; height:49px; border-bottom:1px solid #d0d0d3; box-sizing:border-box; color:#949393; font-size:13px; letter-spacing:-1px; text-align:center; line-height:31px;}
-.ico_clock{display:inline-block; height:18px; background:url(http://image.yeoboya.com/imgs/new_wedding/img/ico_clock_gray.png) left top no-repeat; background-size:16px 16px; padding-left:18px; padding-right:3px;}
+.ico_clock{display:inline-block; height:16px; line-height:16px; background:url(http://image.yeoboya.com/imgs/new_wedding/img/ico_clock_gray.png) left top no-repeat; background-size:16px 16px; padding-left:18px; padding-right:3px; color:red;}
 .ico_pro_open{position:relative; top:4px;} /*프로필열람뱃지*/
 .open_info_red{color:#e3361f;}
 .open_info_bro{color:#473332;}
